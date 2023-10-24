@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JavaScript</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        h1 {
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <p>Já me livrei da maldição!!</p>
+    <script>
+        /*
+        Existem duas formas de converter uma string para um number:
+        Number.parseInt(n) : Transforma a string em um número inteiro
+        Number.parseFloat(n) : Transforma a string em um número flutuante
+        Number(n): Transforma a string em um número, porém o próprio JavaScript irá decifrar qual tipo de dado é
+        */
+
+        /*
+        Converter um number para uma string:
+        String(n)
+        n.toString()
+        */
+
+        /*
+        Formatando Strings
+        var s = 'JavaScript'
+        'Eu estou aprendendo s' //não faz interpolação
+        'Eu estou aprendendo' + s //usa concatenação
+        `Eu estou aprendendo ${s}` //usa template string
+
+        INFORMAÇÕES EXTRAS
+        s.length // quantos caracteres a string tem
+        s.toUpperCase() // tudo para "MAIÚSCULAS"
+        s.toLowerCase() // tudo para "minúsculas"
+        */
+
+        /*
+        Formatando números
+        var n1 = 1543.5
+        n1
+        n1.toFixed(2) // adiciona casas decimais
+        > n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) // converte para valores monetários
+        */
+        var n1 = Number(window.prompt ('Digite um número: '))
+        var n2 = Number(window.prompt ('Digite outro número: '))
+        var soma = n1 + n2
+        window.alert (`A soma entre ${n1} e ${n2} é igual a ${soma} !`)
+        // (number + number ) + utilizado para adição
+        // (string + string) + utilizado para concatenação
+    </script>
+</body>
+</html>
